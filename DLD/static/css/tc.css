@@ -1,0 +1,264 @@
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+    z-index: 999999;
+    opacity: 0.7;
+  }
+  .loaderContent {
+    color: #a4ec0d;
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    align-content: center;
+  }
+  @-webkit-keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  @-webkit-keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes round {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  #temp th:nth-child(odd) {
+    background: #DCDCDC;
+  }
+  
+  #temp th:nth-child(even) {
+    background: #A9A9A9;
+  }
+  @media print {
+    body {-webkit-print-color-adjust: exact;}
+  }
+  
+  
+  /* cm spner */
+  
+  .cm-spinner {
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #f15e41;
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+    position: relative;
+  }
+  
+  .cm-spinner::before,
+  .cm-spinner::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+  }
+  
+  .cm-spinner::before {
+    border-top-color: #bad375;
+    -webkit-animation: 3s spin linear infinite;
+    animation: 3s spin linear infinite;
+  }
+  
+  .cm-spinner::after {
+    border-top-color: #26a9e0;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }   
+               
+  @-webkit-keyframes spin {
+      from {
+          -webkit-transform: rotate(0deg);
+           transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }   
+          
+  @keyframes spin {
+      from {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+      }
+  }
+  
+  
+  .img-profile {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  
+  .bg-ani-purple {
+    background: #4A235A;
+    background: linear-gradient(-45deg, #D2B4DE, #A569BD, #6C3483, #4A235A);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-blue {
+    background: #1C2833;
+    background: linear-gradient(-45deg, #AED6F1, #3498DB, #21618C, #1C2833);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-green {
+    background: #03370F;
+    background: linear-gradient(-45deg, #ABEBC6, #2ECC71, #196F3D, #03370F);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-red {
+    background: #4C0303;
+    background: linear-gradient(-45deg, #F06969, #EF1818, #8C0707, #4C0303);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-orange {
+    background: #814C06;
+    background: linear-gradient(-45deg, #F5AD50, #F48D07, #BD6E07, #814C06);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-yellow {
+    background: #897B07;
+    background: linear-gradient(-45deg, #F6EB89, #E5CD09, #BFAC0A, #897B07);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-pink {
+    background: linear-gradient(-45deg, #FC6BEF, #EF0BDB, #A00793, #4C0345);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-ani-pinkpurple {
+    background: #73053A;
+    background: linear-gradient(-45deg, #E86CA8, #E91079, #B00D5C, #73053A);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-animeted1 {
+    background: #bd6bf6;
+    background: linear-gradient(-45deg, #00d0ca, #ff4459, #00beae, #bd6bf6);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-animeted2 {
+    background: #69c938;
+    background: linear-gradient(-45deg, #d77600, #22ac2a, #ffa4e9, #69c938);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-animeted3 {
+    background: #4C0345;
+    background: linear-gradient(-45deg, #e81500, #f4a100, #00ac69, #4C0345);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  .bg-animeted4 {
+    background: #F5AD50;
+    background: linear-gradient(-45deg, #1C2833, #764814, #c0a9ff, #F5AD50);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    color: #f8f9fa;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
